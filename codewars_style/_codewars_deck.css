@@ -1,0 +1,137 @@
+/* ---------- Desktop Styles ---------- */
+
+/* use .mac class selector to target mac specific styles */
+.card {
+	font-family: 'Assistant',  sans-serif;
+ 	font-size: 20px;
+ 	background-color: #616161;
+	text-align: left;
+	padding: 3%;
+}
+
+.frontbg {
+ 	background-color: #3b3c40;
+ 	border-radius: 12px 12px 0px 0px;
+	position: relative;
+	padding: 40px;
+	padding-top: 30px;
+	color: #f0f0f0;
+}
+
+.badges {
+	position: absolute;
+	top: 35px;
+	right: 40px;
+}
+
+.language {
+	font-weight: bold;
+	font-size: 14px;
+	border: 2px solid #bac9de;
+	display: inline-block;
+	right: 5%;
+	padding: 6px ;
+	background-color: #333333;
+	color: #bac9de;
+}
+
+#difficulty {
+	background-color: #333333;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.title {
+	padding-top: 8px;
+	font-weight: bold;
+	font-size: 23px;
+	color: white;
+}
+
+.specs {
+ 	padding-top: 20px;
+}
+
+h5  {
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+.output {
+	font-family: 'Inconsolata', monospace;
+ 	font-size: 17px;
+	color: #eaeaea;
+}
+
+.backbg {
+ 	position: relative;
+ 	background-color: #f0f0f0;
+	padding: 40px;
+	padding-top: 30px;
+ 	border-radius: 0px 0px 12px 12px; 
+}
+
+.solution {
+	font-family: 'Inconsolata', monospace;
+ 	position: relative;
+ 	font-size: 15px;
+}
+
+.notes {
+ 	color: #006192;
+ 	font-family: Assistant;
+ 	font-size: 18px;
+}
+
+/* ---------- Android Styles ---------- */
+.android .frontbg {
+ 	background-color: #50BAE8;
+ 	font-weight: bold;
+ 	border-radius: 12px 12px 0px 0px;
+ 	color: #fff;
+ 	position: relative;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ 	left: 0;
+}
+
+.android .card {
+ 	font-family: Times;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	color: black;
+ 	background-color: #fff;
+ 	background-size: 0%;
+}
+
+.android .backbg {
+ 	position: relative;
+ 	top: -5px;
+ 	background-color: #F8FCFE;
+ 	padding: 15px;
+ 	padding-bottom: 10px;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	border-radius: 0px 0px 12px 12px; 
+ 	font-size: 20px;
+ 	text-align: left;
+}
+
+.android .example {
+ 	color: #006192;
+ 	font-family: Georgia;
+ 	font-size: 15px;
+ 	font-style: italic ;
+ 	margin-top: 15px;
+ 	margin-bottom: 10px;
+}
+
+/* Place ttf font files inside Anki collection.media folder first before importing */
+@font-face { 
+	font-family: Inconsolata; 
+	src: url('_Inconsolata.ttf');
+ }

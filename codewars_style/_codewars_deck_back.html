@@ -1,0 +1,77 @@
+<div class="card">
+    <!-- HTML that goes under "Back Template" -->
+    <div class=frontbg>
+
+        <div class=badges> 
+            
+            {{#Difficulty}}
+            <div class="language" id="difficulty">
+                {{Difficulty}}
+            </div>
+            {{/Difficulty}}
+    
+            {{#Language}}
+            <div class=language>
+                {{Language}}
+            </div>
+                {{/Language}}
+        </div>
+    
+        <div class=title>
+            {{Challenge Name}}
+        </div>
+    
+        <div class=specs>
+            {{Challenge Specs}}
+        </div>
+    
+        {{#Sample Ouputs}}
+        <hr>
+        <h5>Sample Ouputs:</h5>
+        <div class=output>
+            {{Sample Ouputs}}
+        </div>
+            {{/Sample Ouputs}}
+    
+    </div>
+    
+    <div class=backbg>
+        
+        <div class=solution>
+            {{Best Solution}}
+        </div>
+        
+        {{#Notes}}
+        <div class="notes" >
+            {{Notes}}
+        </div>
+        {{/Notes}}
+        
+    </div>
+    
+    <!-- JavaScript for changing the color display of the difficulty badge -->
+    <!-- {{#FieldName}} Content inside is executed only if Field is not empty{{/FieldName}}-->
+    {{#Difficulty}}
+    <script>
+        var difficultyID = document.getElementById("difficulty")
+        var diffContent = difficultyID.innerHTML;
+    
+        if (diffContent.includes("7") || diffContent.includes("8")){
+            difficultyID.style.border = "2px solid #E6E6E6";
+            difficultyID.style.color = "#E6E6E6";
+        }
+        else if (diffContent.includes("6") || diffContent.includes("5")){
+            difficultyID.style.border = "2px solid #ECB613";
+            difficultyID.style.color = "#ECB613";
+        }
+        else if (diffContent.includes("4") || diffContent.includes("3")){
+            difficultyID.style.border = "2px solid #3C7EBB";
+            difficultyID.style.color = "#3C7EBB";
+        }
+        else if (diffContent.includes("2") || diffContent.includes("1")){
+            difficultyID.style.border = "2px solid #866CC7";
+            difficultyID.style.color = "#866CC7";
+        }
+    </script>
+    {{/Difficulty}}
+</div>
