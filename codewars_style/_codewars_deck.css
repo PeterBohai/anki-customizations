@@ -3,15 +3,15 @@
 /* use .mac class selector to target mac specific styles */
 .card {
 	font-family: 'Assistant',  sans-serif;
- 	font-size: 20px;
- 	background-color: #616161;
+	font-size: 20px;
+	background-color: #616161;
 	text-align: left;
 	padding: 3%;
 }
 
 .frontbg {
- 	background-color: #3b3c40;
- 	border-radius: 12px 12px 0px 0px;
+	background-color: #3b3c40;
+	border-radius: 12px 12px 0 0;
 	position: relative;
 	padding: 40px;
 	padding-top: 30px;
@@ -26,20 +26,51 @@
 
 .language {
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	border: 2px solid #bac9de;
 	display: inline-block;
 	right: 5%;
-	padding: 6px ;
+	padding: 6px;
 	background-color: #333333;
 	color: #bac9de;
 }
 
-#difficulty {
-	background-color: #333333;
-	display: inline-block;
+/* Difficulty (kata) Level badge */
+/*----------*/
+#outer-hex {
+	position: relative;
+	top: 6px;
 	margin-right: 5px;
+	background-color: #bac9de;
+	display: inline-block;
+	height: 34px;
+	width: 72px;
+	clip-path: polygon(17% 0, 83% 0, 100% 50%, 83% 100%, 17% 100%, 0 50%);
+
 }
+
+#inner-hex {
+	display: inline-block;
+	position: relative;
+	background-color: #333333;
+	left: 3px;
+	top: 3px;
+	height: 28px;
+	width: 66px;
+	clip-path: polygon(15% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
+}
+
+#difficulty {
+	font-size: 15px;
+	color: #f0f0f0;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/*----------*/
 
 .title {
 	padding-top: 8px;
@@ -49,7 +80,7 @@
 }
 
 .specs {
- 	padding-top: 20px;
+	padding-top: 20px;
 }
 
 h5  {
@@ -63,75 +94,73 @@ hr {
 
 .output {
 	font-family: 'Inconsolata', monospace;
- 	font-size: 17px;
+	font-size: 17px;
 	color: #eaeaea;
 }
 
 .backbg {
- 	position: relative;
- 	background-color: #f0f0f0;
+	position: relative;
+	background-color: #f0f0f0;
 	padding: 40px;
 	padding-top: 30px;
- 	border-radius: 0px 0px 12px 12px; 
+	border-radius: 0 0 12px 12px;
 }
 
 .solution {
 	font-family: 'Inconsolata', monospace;
- 	position: relative;
- 	font-size: 15px;
+	position: relative;
+	font-size: 15px;
 }
 
 .notes {
- 	color: #006192;
- 	font-family: Assistant;
- 	font-size: 18px;
+	color: #006192;
+	font-family: Assistant, serif;
+	font-size: 18px;
 }
 
 /* ---------- Android Styles ---------- */
 .android .frontbg {
- 	background-color: #50BAE8;
- 	font-weight: bold;
- 	border-radius: 12px 12px 0px 0px;
- 	color: #fff;
- 	position: relative;
- 	padding-top: 20px;
- 	padding-bottom: 20px;
- 	left: 0;
+	background-color: #50BAE8;
+	font-weight: bold;
+	border-radius: 12px 12px 0px 0px;
+	color: #fff;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	left: 0;
 }
 
 .android .card {
- 	font-family: Times;
- 	font-size: 20px;
- 	text-align: center;
- 	color: black;
- 	background-color: #fff;
- 	background-size: 0%;
+	font-family: Times, serif;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	background-color: #fff;
+	background-size: 0%;
 }
 
 .android .backbg {
- 	position: relative;
- 	top: -5px;
- 	background-color: #F8FCFE;
- 	padding: 15px;
- 	padding-bottom: 10px;
- 	padding-left: 15px;
- 	padding-right: 15px;
- 	border-radius: 0px 0px 12px 12px; 
- 	font-size: 20px;
- 	text-align: left;
+	position: relative;
+	top: -5px;
+	background-color: #F8FCFE;
+	padding: 15px;
+	padding-bottom: 10px;
+	border-radius: 0px 0px 12px 12px;
+	font-size: 20px;
+	text-align: left;
 }
 
 .android .example {
- 	color: #006192;
- 	font-family: Georgia;
- 	font-size: 15px;
- 	font-style: italic ;
- 	margin-top: 15px;
- 	margin-bottom: 10px;
+	color: #006192;
+	font-family: Georgia, serif;
+	font-size: 15px;
+	font-style: italic ;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 /* Place ttf font files inside Anki collection.media folder first before importing */
-@font-face { 
-	font-family: Inconsolata; 
+@font-face {
+	font-family: Inconsolata;
 	src: url('_Inconsolata.ttf');
- }
+}
