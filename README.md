@@ -14,9 +14,9 @@ This deck is based on the color scheme and style of [Codewars](https://www.codew
 
 The Anki 2.1 Add-on: [Syntax Highlighting for Code](https://ankiweb.net/shared/info/1463041493) (1463041493) is recommended for best results when displaying the solution code.
 
-The deck (LaTeX) options should be the same as those of the Basic deck:
+<img align="right" src="codewars_style/screenshots/codewars_deck_sample5.png" width=370>
 
-<img align="right" src="codewars_style/screenshots/codewars_deck_sample5.png" width=380>
+The deck (LaTeX) options should be the same as those of the Basic deck:
 
 **Header**  
 \documentclass[12pt]{article}  
@@ -34,7 +34,7 @@ The deck (LaTeX) options should be the same as those of the Basic deck:
 
 This deck is inspired by Color Palette 35489 from [colorhunt](https://colorhunt.co/palette/35489) and is designed for reviewing various programming language specific topics and syntax.
 
-<img src="cs_general_style/screenshots/cs_deck_sample1.png" width=430>  <img src="cs_general_style/screenshots/cs_sample2.png" width=430>
+<img src="cs_general_style/screenshots/cs_deck_sample1.png" width=430>  <img src="cs_general_style/screenshots/cs_deck_sample2.png" width=430>
 
 The Anki 2.1 Add-on: [Syntax Highlighting for Code](https://ankiweb.net/shared/info/1463041493) (1463041493) is recommended for best results when displaying the solution code.
 
