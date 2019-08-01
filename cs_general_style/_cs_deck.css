@@ -3,119 +3,62 @@
 /* use .mac class selector to target mac specific styles */
 .card {
 	font-family: 'Assistant',  sans-serif;
-	font-size: 20px;
-	background-color: #616161;
+	font-size: 22px;
+	background-color: #ccdde3;
 	text-align: left;
 	padding: 3%;
 }
 
 .frontbg {
-	background-color: #3b3c40;
+	background-color: #7fa2b8;
 	border-radius: 12px 12px 0 0;
 	position: relative;
 	padding: 40px;
-	padding-top: 30px;
-	color: #f0f0f0;
-}
-
-.badges {
-	position: absolute;
-	top: 35px;
-	right: 40px;
+	color: black;
 }
 
 .language {
 	font-weight: bold;
 	font-size: 15px;
-	border: 2px solid #bac9de;
+	border: 2px solid #e8ecf1;
 	display: inline-block;
-	right: 5%;
-	padding: 6px;
-	background-color: #333333;
-	color: #bac9de;
+	padding: 5px;
+	background-color: #5e6e85;
+	color: #e8ecf1;
+	font-family: 'Inconsolata', monospace;;
 }
 
-/* Difficulty (kata) Level badge */
-/*----------*/
-#outer-hex {
-	position: relative;
-	top: 6px;
-	margin-right: 5px;
-	background-color: #bac9de;
-	display: inline-block;
-	height: 34px;
-	width: 72px;
-	clip-path: polygon(17% 0, 83% 0, 100% 50%, 83% 100%, 17% 100%, 0 50%);
+.question {
+	margin-top: 15px;
 
 }
 
-#inner-hex {
-	display: inline-block;
-	position: relative;
-	background-color: #333333;
-	left: 3px;
-	top: 3px;
-	height: 28px;
-	width: 66px;
-	clip-path: polygon(15% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
-}
-
-#difficulty {
-	font-size: 15px;
-	color: #f0f0f0;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-/*----------*/
-
-.title {
-	padding-top: 8px;
-	font-weight: bold;
-	font-size: 23px;
-	color: white;
-}
-
-.specs {
-	padding-top: 20px;
-}
-
-h5  {
-	margin: 0 0 15px 0;
-	text-align: center;
-}
-
-hr {
-	margin: 20px 0;
-}
-
-.output {
-	font-family: 'Roboto', serif;
-	font-size: 17px;
-	color: #eaeaea;
+.ex-code {
+	margin-top: 15px;
+	font-family: 'Inconsolata', monospace;
+	font-size: 18px;
+	color: #e8ecf1;
 }
 
 .backbg {
 	position: relative;
-	background-color: #f0f0f0;
+	background-color: #fafdff;
 	padding: 40px;
 	padding-top: 30px;
 	border-radius: 0 0 12px 12px;
 }
 
 .solution {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Assistant',  sans-serif;
 	position: relative;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .notes {
-	color: #006192;
-	font-family: Assistant, serif;
-	font-size: 18px;
+	margin-top: 10px;
+	color: #6c737e;
+	font-family: 'Assistant',  sans-serif;
+	font-size: 16px;
 }
 
 /* ---------- Android Styles ---------- */
@@ -164,3 +107,4 @@ hr {
 	font-family: Inconsolata;
 	src: url('_Inconsolata.ttf');
 }
+

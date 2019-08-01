@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Front Template</title>
+    <link rel="stylesheet" href="_cs_deck.css">
+</head>
+
+<body>
+<div class="card">
+
+    <!-- HTML that goes under "Front Template" -->
+    <div class=frontbg>
+
+        {{#Language}}
+        <div class=language>
+            {{Language}}
+        </div>
+        {{/Language}}
+
+        <div class=question>
+            {{Question}}
+        </div>
+
+        {{#Example Code}}
+        <div class=ex-code>
+            {{Example Code}}
+        </div>
+        {{/Example Code}}
+
+    </div>
+
+    <!-- HTML above goes under "Front Template" -->
+
+</div>
+
+</body>
+
+</html>
+

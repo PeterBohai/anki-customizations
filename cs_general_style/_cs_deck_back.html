@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Back Template</title>
+    <link rel="stylesheet" href="_cs_deck.css">
+</head>
+
+<body>
+<div class="card">
+
+    <!-- HTML that goes under "Back Template" -->
+    <div class=frontbg>
+
+        {{#Language}}
+        <div class=language>
+            {{Language}}
+        </div>
+        {{/Language}}
+
+        <div class=question>
+            {{Question}}
+        </div>
+
+        {{#Example Code}}
+        <div class=ex-code>
+            {{Example Code}}
+        </div>
+        {{/Example Code}}
+
+    </div>
+
+    <div class=backbg>
+
+        <div class=solution>
+            {{Solution}}
+        </div>
+
+        {{#Notes/Example}}
+        <div class="notes" >
+            {{Notes/Example}}
+        </div>
+        {{/Notes/Example}}
+
+    </div>
+    <!-- HTML above goes under "Back Template" -->
+
+</div>
+
+</body>
+
+</html>
+
